@@ -1,0 +1,25 @@
+body {
+    background-color: azure;
+    position: absolute;
+}
+#about-welcome {
+    margin-left: auto;
+}
+.about-info {
+    background-color: lavender;
+    width: 250px;
+    margin: 10px 150px;
+    padding: 25px 50px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+}
+.about-info h2 {
+    text-transform: uppercase;
+}
+footer p {
+    margin-top: 400px;
+    text-align: center;
+    font-size: 20px;
+    clear: both;
+}
