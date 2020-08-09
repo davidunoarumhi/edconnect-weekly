@@ -1,0 +1,117 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+[type=search] {
+    border-radius: 5px;
+    border: 1px;
+    padding: 7px;
+    text-indent: 5px;
+    margin-right: 5.5px;
+}
+
+.btn-search {
+    border: 1px solid white;
+    background-color: rgba(0,123,255,0);
+}
+
+.navbar.navbar-dark.navbar-expand-md {
+    background-color: #3987fd;
+    height: auto;
+}
+ 
+main {
+    padding: 25px;
+}
+
+.jumbotron {
+    margin: 15px auto;
+    padding: 75px;
+    width: auto;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 450px) {
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+}
+  
+.btn.btn-primary.text-white {
+    margin-right: 5px;
+}
+  
+.btn.btn-primary.text-white.login {
+    background-color: gray;
+}
+
+.container {
+    margin: 30px auto;
+    width: auto;
+}
+
+.login-container {
+    margin: 30px auto;
+    padding: 50px;
+    width: 50%;
+}
+
+.row {
+    margin: auto;
+    padding: 10px 45px;
+}
+
+footer {
+    height: 50px;
+    background-color: #ebebeb;
+    margin: 30px auto;
+    text-align: end;
+    padding: 10px;
+}
+  
+@media (max-width: 768px) {
+    .container {
+      max-width: 880px;
+    }
+}
+  
+.card-link {
+    font-size: 14px;
+}
+
+@media (max-width: 990px) {
+    .jumbotron {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .col {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin: 5px auto;
+    }
+
+    .row {
+      max-width: 960px;
+      margin: -17px 20px;
+      padding: 40px;
+    }
+}
+  
+@media (max-width: 540px) {
+    footer {
+      font-size: 15px;
+      text-align: center;
+      height: auto;
+      width: auto;
+    }
+}
