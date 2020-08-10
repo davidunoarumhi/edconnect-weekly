@@ -57,12 +57,6 @@ main {
     width: auto;
 }
 
-.login-container {
-    margin: 30px auto;
-    padding: 50px;
-    width: 50%;
-}
-
 .row {
     margin: auto;
     padding: 10px 45px;
@@ -114,4 +108,28 @@ footer {
       height: auto;
       width: auto;
     }
+}
+
+.usr {
+    max-width: 700px;
+    width: 90%;
+    margin: 35px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 4px;
+    color: #505e6c;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    font-weight: 600;
+}
+  
+.form-group {
+    float: left;
+}
+  
+.dropdown-toggle{
+    width: 100%;
+    margin-left: -5px;
+    height: 40px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
 }

@@ -28,35 +28,60 @@
             </div>
     </nav>
     <main>
-        <h2>Sign Up</h2>
-        <form>
-            <label for="fname">First Name: </label>
-            <input type="text" name="fname" id="fname"><br><br>
-            <label for="lname">Last Name: </label>
-            <input type="text" name="lname" id="lname"><br><br>
-            <label for="email">Email Address: </label>
-            <input type="email" name="email" id="email"><br><br>
-            <label for="password">Password: </label>
-            <input type="password" name="password" id="password"><br><br>
-            <label for="matric">Matric Number: </label>
-            <input type="text" name="matric" id="matric"><br><br>
-            <label for="program">Program: </label>
-            <select name="program" id="program">
-                <option value="cs">Computer Science</option>
-                <option value="cis">Computer Information Systems</option>
-                <option value="ct">Computer Technology</option>
-            </select><br><br>
-            <label for="year">Year of Graduation: </label>
-            <select name="year" id="year">
-                <option value="2015">2015</option>
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020" selected>2020</option>
-                <option value="2021">2021</option>
-            </select><br><br>
-            <input type="submit" value="Submit">
+        <form class="usr col-8" style="max-width: 880px;">
+            <h1>Sign Up</h1>
+            <br>
+            <div class="form-group col-6">
+                <label for="fname">First Name</label>
+                <input class="form-control" type="text" id="fname" placeholder="First Name">
+            </div>
+            <div class="form-group col-6">
+                <label for="lname">Last Name</label>
+                <input class="form-control" type="text" id="lname" placeholder="Last Name">
+            </div>
+            <div class="form-group col-6">
+                <label for="email">Email Address</label>
+                <input class="form-control" type="email" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group col-6">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-group col-6">
+                <label for="program">Program</label>
+                <div class="dropdown">
+                    <select class="btn btn-primary dropdown-toggle text-left" name="program" id="program" style="background-color: rgba(57,135,253,0);text-align: left;color: #505e6c;">
+                        <div class="dropdown-menu" role="menu">
+                            <option class="dropdown-item" value="default" selected disabled>Choose...</option>
+                            <option class="dropdown-item" value="cs">Computer Science</option>
+                            <option class="dropdown-item" value="cis">Computer Information Systems</option>
+                            <option class="dropdown-item" value="ct">Computer Technology</option>
+                        </div>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group col-3">
+                <label for="matric">Matriculation number</label>
+                <input class="form-control" type="text" placeholder="e.g 16/2020">
+            </div>
+            <div class="form-group col-3">
+                <label for="year">Graduation Year</label>
+                <div class="dropdown">
+                    <select class="btn btn-primary dropdown-toggle text-left" name="year" id="year" style="background-color: rgba(57,135,253,0);text-align: left;color: #505e6c;">
+                        <div class="dropdown-menu" role="menu">
+                            <option class="dropdown-item" value="default" selected disabled>Choose...</option>
+                            <option class="dropdown-item" value="2015">2015</option>
+                            <option class="dropdown-item" value="2016">2016</option>
+                            <option class="dropdown-item" value="2017">2017</option>
+                            <option class="dropdown-item" value="2018">2018</option>
+                            <option class="dropdown-item" value="2019">2019</option>
+                            <option class="dropdown-item" value="2020">2020</option>
+                            <option class="dropdown-item" value="2021">2021</option>
+                        </div>
+                    </select>
+                </div>
+            </div>
+            <input class="btn btn-primary" type="submit" value="Sign Up">
         </form>
         <footer class="col-9">
             <p>Project Explorer © 2020 - <strong>Edconnect</strong></p>
