@@ -28,28 +28,44 @@
             </div>
     </nav>
     <main>
-        <div>
-            <h2>Search Project by</h2>
-            <form>
-                <label for="project-title">Project Title: </label><br>
-                <input type="text" name="title" id="title"><br><br>
-                <label for="project-abstract">Project Abstract: </label><br>
-                <input type="text" name="abstract" id="abstract"><br><br>
-                <label for="authors">Authors: </label><br>
-                <input type="text" name="authors" id="authors"><br><br>
-                <label for="tags">Tag(s): </label><br>
-                <input type="text" name="tags" id="tags"><br><br>
-                <input type="submit" value="Search">
-            </form>
+        <form class="usr col-8" style="max-width: 700px;">
+            <h1>Search Project</h1>
+            <br>
+            <div class="form-group col-12">
+                <label for="project-name">Project Name</label>
+                <input class="form-control" type="text" id="project-name" placeholder="Enter project name">
+            </div>
+            <div class="form-group col-12">
+                <label for="project-abstract">Project Abstract</label>
+                <textarea class="form-control" id="project-abstract" rows="7"></textarea>
+            </div>
+            <div class="form-group col-12">
+                <label for="project-authors">Author(s)</label>
+                <input class="form-control" type="text" id="project-authors" placeholder="Enter author names (separated by comma)">
+            </div>
+            <div class="form-group col-12">
+                <label for="project-tags">Tag(s)</label>
+                <input class="form-control" type="text" id="project-tags" placeholder="Use # to search for project under different topics (e.g. #javascript #mongodb)">
+            </div>
+            <button class="btn btn-primary" type="button">Search</button>
+        </form>
+        <br>
+        <div class="container col-6">
             <h2>Search Result</h2>
-            <h3>Project 4</h3>
-            <ul>
-                <li>Name: Project 4</li>
-                <li>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                <li>Program: Computer Science</li>
-                <li>Authors: Ade Ade, Brian James</li>
-                <li>Tags: #yaml, #ejs</li>
-            </ul>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Project 4</a></h4>
+                            <h6 class="text-muted card-subtitle mb-2">Henry James, Bola Ade</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a class="card-link" href="#">#yaml,</a>
+                            <a class="card-link" href="#">#ejs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer class="col-9">
             <p>Project Explorer © 2020 - <strong>Edconnect</strong></p>

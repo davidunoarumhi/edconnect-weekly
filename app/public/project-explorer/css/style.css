@@ -139,7 +139,7 @@ footer {
 }
 
 .row.details {
-    background-color: rgb(248,248,248);
+    background-color: #ebebeb;
     margin-top: 10px;
     max-height: 75px;
     padding: 15px;
@@ -154,3 +154,35 @@ footer {
     margin-top: 50px;
   }
   
+  .edit {
+    max-width: 700px;
+    width: 90%;
+    margin: 35px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 4px;
+    color: #505e6c;
+    font-weight: 600;
+  }
+  .edit button{
+    margin-left: 15px;
+}
+
+  .edit .files {
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #ebebeb;
+      border: 1px solid #ebebeb;
+  }
+
+  thead {
+    background-color: #f6f6f6;
+  }
+
+  td {
+      font-weight: 300;
+  }
+  .tags {
+    background-color: #f6f6f6;
+    color: rgb(0, 123, 225);
+  }

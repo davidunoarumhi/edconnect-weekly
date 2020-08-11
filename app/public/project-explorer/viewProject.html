@@ -28,23 +28,70 @@
             </div>
     </nav>
     <main>
-        <div>
-            <h2>Project 4</h2>
-            <a href="editProject.html">Edit Project</a>
-            <ul>
-                <li>Created By: Ade Ade</li>
-                <li>Date Created: 03/03/2020</li>
-                <li>Last Updated: 04/04/2020</li>
-            </ul>
-            <h2>Project Abstract</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <h2>Project Details</h2>
-            <ul>
-                <li>Authors: Ade Ade, Brian James</li>
-                <li>Tags: #yaml, #ejs</li>
-                <li>Project Files: <a href="#">File 1</a>, <a href="#">File 2</a></li>
-            </ul>
+        <div class="container">
+            <h1 class="profile">Project 4</h1>
+            <div class="row details">
+                <div class="col-3">
+                    <h6>Created By</h6>
+                    <p>Ade Ade</p>
+                </div>
+                <div class="col-3">
+                    <h6>Date Created</h6>
+                    <p>2020-08-04</p>
+                </div>
+                <div class="col-3">
+                    <h6>Last Updated</h6>
+                    <p>2020-08-04</p>
+                </div>
+                <div class="col-3 d-flex justify-content-end align-items-start">
+                    <a class="btn btn-primary" type="button" href="editProject.html">Edit Project</a>
+                </div>
+            </div>
+            <div class="row" style="padding: 0px;">
+                <div class="edit col-6">
+                    <h4>Project Abstract</h4>
+                    <hr>
+                    <p style="font-weight: 300;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="edit col-6">
+                    <h4>Project Details</h4>
+                    <hr>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="border rounded-0">Author(s)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border rounded-0">Henry James</td>
+                                </tr>
+                                <tr>
+                                    <td class="border rounded-0">Bola Ade</td>
+                                </tr>
+                                <tr>
+                                    <td class="border rounded-0 tags"><a href="#">#yaml</a>,&nbsp;<a href="#">#ejs</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="border rounded-0">Project Files</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center border rounded-0">No files uploaded yet</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer class="col-9">
             <p>Project Explorer © 2020 - <strong>Edconnect</strong></p>

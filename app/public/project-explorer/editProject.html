@@ -28,31 +28,78 @@
             </div>
     </nav>
     <main>
-        <div>
-            <h2>Project 4</h2>
-            <ul>
-                <li>Created By: Ade Ade</li>
-                <li>Date Created: 03/03/2020</li>
-                <li>Last Updated: 04/04/2020</li>
-            </ul>
-            <h2>Edit Project</h2>
-            <form>
-                <label for="project-name">Project Name: </label><br>
-                <input type="text" name="project-name" id="project-name"><br><br>
-                <label for="project-abstract">Project Abstract: </label><br>
-                <textarea name="project-abstract" id="project-abstract" cols="50" rows="10"></textarea><br><br>
-                <label for="authors">Authors: </label><br>
-                <input type="text" name="authors" id="authors"><br><br>
-                <label for="tags">Tag(s): </label><br>
-                <input type="text" name="tags" id="tags"><br><br>
-                <label for="file">Add Project File: </label><br>
-                <input type="file" name="project" id="project"><br><br>
-                <input type="submit" value="Submit">
-            </form>
+        <div class="container">
+            <h1 class="profile">Project 4</h1>
+            <div class="row details">
+                <div class="col-3">
+                    <h6>Created By</h6>
+                    <p>Ade Ade</p>
+                </div>
+                <div class="col-3">
+                    <h6>Date Created</h6>
+                    <p>2020-08-04</p>
+                </div>
+                <div class="col-3">
+                    <h6>Last Updated</h6>
+                    <p>2020-08-04</p>
+                </div>
+                <div class="col-3 d-flex justify-content-end align-items-start">
+                    <a class="btn btn-primary" type="button" href="viewProject.html">View Project</a>
+                </div>
+            </div>
+            <div class="row" style="padding: 0px;">
+                <form class="edit col-6">
+                    <h4>Edit Project</h4>
+                    <hr>
+                    <div class="form-group col-12">
+                        <label for="project-name">Project Name</label>
+                        <input class="form-control" type="text" id="project-name" placeholder="Project 4">
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="project-abstract">Project Abstract</label>
+                        <textarea class="form-control" id="project-abstract" rows="9"
+                        placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."></textarea>
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="project-authors">Author(s)</label>
+                        <input class="form-control" type="text" id="project-authors" placeholder="Henry James, Bola Ade">
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="project-tags">Tag(s)</label>
+                        <input class="form-control" type="text" id="project-tags" placeholder="#yaml #ejs">
+                    </div>
+                    <button class="btn btn-primary" type="button">Save</button>
+                </form>
+                <div class="edit col-6">
+                    <form>
+                        <h4>Manage Project files</h4>
+                        <hr>
+                        <div class="form-group col-12">
+                            <input type="file" name="file" id="file">
+                        </div>
+                    </form>
+                    <div class="table-responsive">
+                        <hr>
+                        <table class="table">
+                            <thead">
+                                <tr>
+                                    <th class="border rounded-0">Project Files</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center border rounded-0">No files uploaded yet</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                         
+            </div>
         </div>
-        <footer class="col-9">
-            <p>Project Explorer © 2020 - <strong>Edconnect</strong></p>
-        </footer>
     </main>
+    <footer class="col-9"">
+        <p>Project Explorer © 2020 - <strong>Edconnect</strong></p>
+    </footer>
 </body>
 </html>
